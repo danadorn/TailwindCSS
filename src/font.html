@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Font Examples</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        'kantumruy': ['Kantumruy Pro', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="p-8 space-y-6">
+    <!-- default font in tailwindcss -->
+    <div>
+        <h1 class="bg-amber-600 text-2xl font-bold p-4 mb-2">Default Font</h1>
+        <p class="font-sans text-lg">សួស្តី ខ្ញុំមានអារម្មណ៍ល្អ</p>
+    </div>
+
+    <!-- default font in tailwindcss -->
+    <div>
+        <h1 class="bg-amber-700 text-2xl font-bold p-4 mb-2">Default Font</h1>
+        <p class="font-sans text-lg">សួស្តី ខ្ញុំមានអារម្មណ៍ល្អ</p>
+    </div>
+
+    <!-- custom by using kantumruy font in tailwindcss -->
+    <div>
+        <h1 class="bg-amber-800 text-2xl font-bold p-4 mb-2">Custom Kantumruy Font</h1>
+        <p class="font-kantumruy text-lg">សួស្តី ខ្ញុំមានអារម្មណ៍ល្អ</p>
+    </div>
+</body>
+</html>
